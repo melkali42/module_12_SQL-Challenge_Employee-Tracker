@@ -3,11 +3,11 @@ const cTable = require('console.table');
 const db = require('./db/connection');
 
 
-// All Question Arrays
+
 const startMenuQuestion = [
   {
     type: 'list',
-    name: 'startMenuQuestion',
+    name: 'menu',
     message: 'What would you like to do?',
     choices: [
       "Show all Roles",
@@ -47,7 +47,6 @@ const addDepartmentQuestion = [
   }
 ]
 
-
 const addEmployeeQuestions = [
   {
     type: 'input',
@@ -86,8 +85,6 @@ const updateEmployeeRoleQuestion = [
     message: 'What new role would you like for your employee? Please only type the number of the "id" of the role! (i.e. "4")'
   },
 ]
-
-
 
 // All functions to use for manipulating MySQL database
 const addRole = async() => {
@@ -151,7 +148,6 @@ const updateEmployeeRole = async(employeeID) => {
   });
   startMenu();
 }
-
 
 // startMenu function acts as switchboard for options to manipulate database
 const startMenu = async() => {
