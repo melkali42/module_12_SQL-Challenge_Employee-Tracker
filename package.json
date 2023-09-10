@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest"
-         
   },
   "keywords": [],
   "author": "Melissa Kalish",
@@ -19,5 +18,6 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.6.0",
     "seed": "^0.4.4"
-  }
+  },
+  "devDependencies": {}
 }
